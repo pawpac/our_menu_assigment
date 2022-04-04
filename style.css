@@ -1,0 +1,119 @@
+/* applying mar, padd, box and font fam to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+/* creating space between 3 food boxes and floting them to the left */
+.padd1 {
+  padding: 10px;
+  float: left;
+}
+
+.padd2 {
+  padding: 10px;
+  float: left;
+}
+
+.padd3 {
+  padding: 10px;
+  float: left;
+}
+
+/* padding the entire viewport */
+body {
+  padding: 20px;
+}
+
+/* placing 'Our Menu' in the center and making it 75% bigger */
+h1 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 1.75em;
+}
+
+/* creating border and coloring each food box */
+.container {
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  background-color: #D3D3D4;
+}
+
+/* creating box for each food title and making it 25% bigger */
+.food {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  text-align: center;
+  padding: 5px;
+  max-width: 200px;
+  min-width: 80px;
+  float: right;
+  font-size: 1.25em; 
+}
+
+/* applying different color to each food title box */
+.chicken {
+  background-color: #00FFFF;
+}
+
+.beef {
+  background-color: #FF7F50;
+}
+
+.sushi {
+  background-color: #BDB76B;
+}
+
+/* making sure text stays below food title box */
+p {
+  clear: right;
+  padding: 10px;
+}
+
+/* creating size variants for each device */
+@media (min-width: 992px) {
+  .padd1 {
+    width: 33.33%;
+  }
+  
+  .padd2 {
+    width: 33.33%;
+  }
+
+  .padd3 {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .padd1 {
+    width: 50%;
+  }
+  
+  .padd2 {
+    width: 50%;
+  }
+
+  .padd3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .padd1 {
+    width: 100%;
+  }
+  
+  .padd2 {
+    width: 100%;
+  }
+
+  .padd3 {
+    width: 100%;
+  }
+}
